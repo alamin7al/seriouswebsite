@@ -2,11 +2,8 @@ input{
     padding: 11px;
     width: auto;
     margin: 5px;
-    border-radius: 9px;
 }
 .add-service{
-    background-color: rgb(217, 233, 243);
-    border-radius: 7px;
     margin-bottom: 10px;
 }
 label{

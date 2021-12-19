@@ -1,14 +1,14 @@
 import React from 'react';
-import Allcar from './Allcar';
 import Cars from './Cars';
-// import Header from './Header';
-import Navigation from './Navigation';
+import Headers from './Headers/Headers';
+import HomeCar from './HomeCar';
 import Revew from './Revew'
 const Home = () => {
     return (
         <div>
-           {/* <Header></Header> */}
+          <Headers></Headers>
            <Cars></Cars>
+           <HomeCar></HomeCar>
            <Revew></Revew>
         </div>
     );

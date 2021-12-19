@@ -66,11 +66,12 @@ const Shop = () => {
 
     return (
         <div>
-            <div className="container">
-                <input type="text"
-                    onChange={handleSerch}
+            <div className="container my-5">
+                <div class="mb-3 mx-auto w-50 text-start">
+                    <label for="exampleInputEmail1" className=" fs-3 mb-3 form-label fw-5 text-uppercase fst-italic font-monospace">Search Products</label>
+                    <input placeholder='Search Products'  onChange={handleSerch} type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"/>
+                </div>
 
-                />
                 <div className="row">
                     <div className="col-md-8">
                         <h3>Products: {display.length} </h3>

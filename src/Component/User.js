@@ -4,7 +4,7 @@ import useAuth from './Login/useAuth';
 
 const User = ({users, user, setUsers }) => {
     const { loading } = useAuth()
-    const { name, email, city, zip, _id, phone, productName, img } = user
+    const { name, email, city, zip, _id, phone, productName,price, img } = user
 
 
     const handdleDelete = id => {
@@ -35,7 +35,8 @@ const User = ({users, user, setUsers }) => {
                 <div className='h-100 w-100 d-flex justify-content-center align-items-center'>
                     {!loading && <Card style={{ width: '30rem' }}>
                         <Card.Body>
-                            <Card.Title className='fs-4 text-muted'>Car Name {productName}</Card.Title>
+                            <Card.Title className='fw-bolder fs-4  text-start font-monospace fw-lighter'>Car Name: {productName}</Card.Title>
+                            <Card.Title className='fw-bolder fs-4  text-start font-monospace fw-lighter'>Car Price: ${price}</Card.Title>
                             <div className="text-start fs-5">
                                 <p> <em>Your Name: </em> {name} </p>
                                 <p> <em>Your Email:</em> {email} </p>

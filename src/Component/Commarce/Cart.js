@@ -19,7 +19,34 @@ const Cart = (props) => {
     const grandtotal = total + shipping + tax
     return (
         <div>
+
             <Card style={{ width: '18rem' }}>
+                <div>
+                    <Card.Body className=' '>
+                        <div >
+
+
+                            <div className='fs-5 text-start text-capitalize font-monospace fst-italic'>
+                                <p className='fs-4 lh-base'>Product Quantity: {totalQuantity}</p>
+                                <p> total:   {total.toFixed(2)}</p>
+
+                                <p>   shipping:  {shipping.toFixed(2)}</p>
+                                <p>  tax:   {tax.toFixed(2)}</p>
+                                <p>    grandTotal:   {grandtotal.toFixed(2)}</p>
+                            </div>
+                        </div>
+                        <Card.Text className='text-start'>
+                            {props.children}
+                        </Card.Text>
+                    </Card.Body>
+                </div>
+
+            </Card>
+
+
+
+
+            {/* <Card style={{ width: '18rem' }}>
                 <Card.Body>
                     <Card.Title> {totalQuantity}  </Card.Title>
                     <Card.Text>
@@ -42,8 +69,8 @@ const Cart = (props) => {
                         {props.children}
                     </Card.Text>
                 </Card.Body>
-            </Card>
-            
+            </Card> */}
+
         </div>
     );
 };
